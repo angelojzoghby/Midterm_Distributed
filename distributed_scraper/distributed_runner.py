@@ -11,8 +11,8 @@ def run_spider(url):
 if __name__ == "__main__":
     client = Client()
     urls = [
-        "https://example.com",
-        "https://www.wikipedia.org/"
+           "https://quotes.toscrape.com/",
+            "https://books.toscrape.com/"
     ]
     futures = [client.submit(run_spider, u) for u in urls]
     for f, _ in as_completed(futures, with_results=True):

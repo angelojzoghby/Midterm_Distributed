@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 class ExampleSpider(scrapy.Spider):
     name = "example"
-    start_urls = ["https://example.com"]
+    start_urls = []
 
     def parse(self, response):
         soup = BeautifulSoup(response.text, "lxml")
