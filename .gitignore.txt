@@ -1,0 +1,10 @@
+# Ignore virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Ignore output files
+output.json
+*.log
+.DS_Store
+.env
