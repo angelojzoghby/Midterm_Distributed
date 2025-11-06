@@ -19,12 +19,13 @@ ADDONS = {}
 #USER_AGENT = "distributed_scraper (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
+DOWNLOAD_DELAY = 1
+USER_AGENT = "Mozilla/5.0 (AcademicProject; DistributedScraper/1.0)"
 
 # Concurrency and throttling settings
 #CONCURRENT_REQUESTS = 16
 CONCURRENT_REQUESTS_PER_DOMAIN = 1
-DOWNLOAD_DELAY = 1
 
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED = False
